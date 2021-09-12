@@ -4,8 +4,17 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-MSG=$(cat $1)
+REG="^([0-9]{1,3}\.){3}[0-9]{1,3}$"
+REGT="\[TicketNo:\].[a-zA-Z0-9;]{1,}\W\[Description:\][\s\S]*\W\[Binary\WSource:\].*"
 
-echo $MSG
+MSG=$(cat $1) # \[TicketNo:\].[a-zA-Z0-9;]{1,}\W\[Description:\][\s\S]*\W\[Binary\WSource:\].*
 
-exit 1
+MSGT="[TicketNo:]AR10092[Description:]哈哈[Binary Source:]NA"
+
+newip='192.168.1.1' # ^([0-9]{1,3}\.){3}[0-9]{1,3}$
+
+if [[ $MSGT =~ $REGT ]]; then
+    echo "success"
+fi
+
+exit 0
