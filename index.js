@@ -1,1 +1,1 @@
-console.log(ACCESS)
+console.log(ACCESS);
