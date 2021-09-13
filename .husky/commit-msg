@@ -17,4 +17,4 @@ if [[ $MSGT =~ $REGT ]]; then
     echo "success"
 fi
 
-exit 0
+exit 1
