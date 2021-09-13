@@ -3,4 +3,6 @@
 
 npm run lint
 
-git add
+git add .
+
+npm run lint

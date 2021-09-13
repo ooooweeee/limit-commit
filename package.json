@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky install",
-    "lint": "eslint --max-warnings 0 src/"
+    "lint": "eslint --fix --max-warnings 0 src/"
   },
   "repository": {
     "type": "git",
