@@ -1,9 +1,6 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-#!/bin/sh
-. "$(dirname "$0")/_/husky.sh"
-
 REG="^([0-9]{1,3}\.){3}[0-9]{1,3}$"
 REGT="\[TicketNo:\].[a-zA-Z0-9;]{1,}\W\[Description:\][\s\S]*\W\[Binary\WSource:\].*"
 
