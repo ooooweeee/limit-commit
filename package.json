@@ -5,12 +5,24 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "lint": "eslint --max-warnings 0 src/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ooooweeee/limit-commit.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ooooweeee/limit-commit/issues"
+  },
+  "homepage": "https://github.com/ooooweeee/limit-commit#readme",
   "devDependencies": {
-    "husky": "^7.0.2"
+    "eslint": "^7.32.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "husky": "^7.0.2",
+    "prettier": "^2.4.0"
   }
 }
